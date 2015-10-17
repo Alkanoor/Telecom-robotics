@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <errno.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+
+void printChoices()
+{
+    printf("\n**************What do you want to do ?**************\n");
+    printf("1-read xbee configuration\n");
+    printf("2-change xbee configuration\n");
+    printf("3-send file to current xbee (read config before)\n");
+    printf("?-quit\n");
+}
+
+int main(int argc, char* args[])
+{
+    if(argc<3)
+    {
+        printf("Usage : %s <serial port> <baud rate>\n",args[0]);
+        return 1;
+    }
+
+    int choice = 1, pid;
+    char choiceStr[2], ch;
+    while(choice<=3&&choice>0)
+    {
+        printChoices();
+        fgets(choiceStr,2,stdin);
+        if(choiceStr[strlen(choiceStr)-1]!='\n')
+            while((ch = getchar()) != '\n' && ch != EOF);
+        else
+            choiceStr[strlen(choiceStr)-1] = 0;
+        choice = atoi(choiceStr);
+
+        switch(choice)
+        {
+            case 1:
+                pid = fork();
+                if(pid<0)
+                {
+                    perror("Error forking ");
+                    return 1;
+                }
+                else if(pid)
+                {
+                    wait(NULL);
+                    configRead = 1;
+                }
+                else
+                {
+                    char* argsRead[] = {"./readConfig",args[1],args[2],NULL};
+                    execv("readConfig",argsRead);
+                }
+                break;
+            case 2:
+		pid = fork();
+                if(pid<0)
+                {
+                    perror("Error forking ");
+                    return 1;
+                }
+                else if(pid)
+                {
+                    wait(NULL);
+                    configRead = 1;
+                }
+                else
+                {
+                    char* argsRead[] = {"./readConfig",args[1],args[2],NULL};
+                    execv("readConfig",argsRead);
+                }
+                break;
+            case 3:
+                break;
+            default:
+                break;
+        }
+    }
+    return 0;
+}
