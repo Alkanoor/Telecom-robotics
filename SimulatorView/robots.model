@@ -1,0 +1,30 @@
+Robot
+  +positionOnTable
+  +rotation
+  +state
+  +size
+  +team
+  BigRobotAlly
+    /possibleStates
+  LittleRobotAlly
+    /possibleStates
+  BigRobotEnnemy
+    /possibleStates
+  LittleRobotEnnemy
+    /possibleStates
+MovableElement
+  +positionOnTable
+  +rotation
+  +state
+  +shape
+  +size
+Obstacle
+  +positionOnTable
+  +rotation
+  +shape
+  +size
+Beacon
+  +positionOnTable
+  +size
+Table
+  +size

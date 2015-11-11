@@ -1,0 +1,16 @@
+begin = '#'
+end = '$'
+stringDelimiter = '%'
+
+message[:] = '1'
+
+foreach BigRobotAllyChange c:
+  message[:] = 'R'
+  if c.add:
+    message[:] = 'a'
+  elif c.delete:
+    message[:] = 'd'
+  elif c.modify:
+    message[:] = 'm'
+  if c.add or c.modify:
+    message[:] = c.robot.dynamic

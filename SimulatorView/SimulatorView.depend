@@ -1,0 +1,163 @@
+# depslib dependency file v1.0
+1447197617 source:/home/alkanor/Documents/Prog/C++/SimulatorView/main.cpp
+	<iostream>
+	<SFML/Config.hpp>
+	<SFML/Graphics.hpp>
+	<boost/regex.hpp>
+	"log/Info_Warning_Error_Logger.hpp"
+	"log/Stdout_Handler.hpp"
+	"Graphical_Element.hpp"
+	"log/Log_Init.hpp"
+	"IO_With_Log.hpp"
+	"Element.hpp"
+	"Logical_Basic_Expression.hpp"
+
+1447001541 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/IO_With_Log.cpp
+	"IO_With_Log.hpp"
+
+1446998857 /home/alkanor/Documents/Prog/C++/SimulatorView/include/IO_With_Log.hpp
+	<boost/array.hpp>
+	<boost/asio.hpp>
+	"log/Info_Warning_Error_Logger.hpp"
+	"log/Logger.hpp"
+
+1446759814 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Erasure_Type.cpp
+	"Erasure_Type.hpp"
+
+1446804311 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Erasure_Type.hpp
+
+1446832388 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/FileHandler.cpp
+	"File_Handler.hpp"
+
+1446832797 /home/alkanor/Documents/Prog/C++/SimulatorView/include/File_Handler.hpp
+	<fstream>
+	"Handler.hpp"
+
+1446838357 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Handler.hpp
+	<string>
+
+1446839014 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Info_Warning_Error_Logger.cpp
+	"Info_Warning_Error_Logger.hpp"
+
+1446838864 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Info_Warning_Error_Logger.hpp
+	<ctime>
+	"String_Factory.hpp"
+	"Logger.hpp"
+
+1446833150 /home/alkanor/Documents/Prog/C++/SimulatorView/include/String_Factory.hpp
+	<string>
+	<sstream>
+
+1446832737 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Logger.hpp
+	<memory>
+	<vector>
+	"Handler.hpp"
+
+1446831983 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Logger.cpp
+	"Logger.hpp"
+
+1446838335 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Stdout_Handler.cpp
+	"Stdout_Handler.hpp"
+
+1446838324 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Stdout_Handler.hpp
+	<iostream>
+	"Handler.hpp"
+
+1447079387 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/FileHandler.cpp
+	"log/File_Handler.hpp"
+
+1446839506 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/File_Handler.hpp
+	<fstream>
+	"Handler.hpp"
+
+1446838357 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/Handler.hpp
+	<string>
+
+1447004787 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/Info_Warning_Error_Logger.cpp
+	"log/Info_Warning_Error_Logger.hpp"
+
+1447079310 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/Info_Warning_Error_Logger.hpp
+	<ctime>
+	"String_Factory.hpp"
+	"Logger.hpp"
+
+1447005365 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/String_Factory.hpp
+	<string>
+	<sstream>
+
+1447000400 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/Logger.hpp
+	<memory>
+	<vector>
+	"Handler.hpp"
+
+1447000400 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/Logger.cpp
+	"log/Logger.hpp"
+
+1446999318 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/Stdout_Handler.cpp
+	"log/Stdout_Handler.hpp"
+
+1446838324 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/Stdout_Handler.hpp
+	<iostream>
+	"Handler.hpp"
+
+1447001119 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/LogInit.cpp
+	"log/LogInit.hpp"
+	<iostream>
+
+1447001064 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/LogInit.hpp
+	<cstdio>
+	"Info_Warning_Error_Logger.hpp"
+	"File_Handler.hpp"
+
+1447079468 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/log/Log_Init.cpp
+	"log/Log_Init.hpp"
+
+1447189619 /home/alkanor/Documents/Prog/C++/SimulatorView/include/log/Log_Init.hpp
+	<fstream>
+	<cstdio>
+	"Info_Warning_Error_Logger.hpp"
+	"File_Handler.hpp"
+
+1447265755 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Element.cpp
+	"Element.hpp"
+
+1447265861 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Element.hpp
+	<map>
+	"log/Log_Init.hpp"
+
+1447004348 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Element_Instanciation.cpp
+	"Element_Instanciation.hpp"
+
+1447197571 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Element_Instanciation.hpp
+	<tuple>
+	"Element.hpp"
+
+1447197189 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Graphical_Element.cpp
+	"Graphical_Element.hpp"
+	<iostream>
+
+1447271077 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Graphical_Element.hpp
+	<sstream>
+	"Element_Instanciation.hpp"
+	"Logical_Expression.hpp"
+	"Element.hpp"
+	"Sprite.hpp"
+
+1447197541 source:/home/alkanor/Documents/Prog/C++/SimulatorView/src/Logical_Expression.cpp
+	"Logical_Expression.hpp"
+
+1447270877 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Logical_Expression.hpp
+	<memory>
+	<vector>
+	"Element_Instanciation.hpp"
+
+1447270862 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Logical_Basic_Expression.hpp
+	<functional>
+	<string>
+	<map>
+	"Logical_Expression.hpp"
+
+1447271009 /home/alkanor/Documents/Prog/C++/SimulatorView/include/Sprite.hpp
+	<SFML/Graphics.hpp>
+	<boost/regex.hpp>
+

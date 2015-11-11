@@ -1,0 +1,4 @@
+BigRobotAlly b
+  |released r:1+'B'+b.id+r.relX+r.relY
+  |drag_and_dropped d:3+'B'+b.id+r.relX+r.relY
+  |key k when k.code == suppr

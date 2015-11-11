@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimulatorView" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SimulatorView" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SimulatorView" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Element.hpp" />
+		<Unit filename="include/Element_Instanciation.hpp" />
+		<Unit filename="include/Graphical_Element.hpp" />
+		<Unit filename="include/Graphical_Element_Instance.hpp" />
+		<Unit filename="include/IO_With_Log.hpp" />
+		<Unit filename="include/Logical_Basic_Expression.hpp" />
+		<Unit filename="include/Logical_Expression.hpp" />
+		<Unit filename="include/Sprite.hpp" />
+		<Unit filename="include/log/File_Handler.hpp" />
+		<Unit filename="include/log/Handler.hpp" />
+		<Unit filename="include/log/Info_Warning_Error_Logger.hpp" />
+		<Unit filename="include/log/Log_Init.hpp" />
+		<Unit filename="include/log/Logger.hpp" />
+		<Unit filename="include/log/Stdout_Handler.hpp" />
+		<Unit filename="include/log/String_Factory.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Element.cpp" />
+		<Unit filename="src/Element_Instanciation.cpp" />
+		<Unit filename="src/Graphical_Element.cpp" />
+		<Unit filename="src/Graphical_Element_Instance.cpp" />
+		<Unit filename="src/IO_With_Log.cpp" />
+		<Unit filename="src/Logical_Expression.cpp" />
+		<Unit filename="src/Sprite.cpp" />
+		<Unit filename="src/log/FileHandler.cpp" />
+		<Unit filename="src/log/Info_Warning_Error_Logger.cpp" />
+		<Unit filename="src/log/Log_Init.cpp" />
+		<Unit filename="src/log/Logger.cpp" />
+		<Unit filename="src/log/Stdout_Handler.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

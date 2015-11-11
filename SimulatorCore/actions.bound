@@ -1,0 +1,12 @@
+move:defined:0
+move_rel:defined:1
+move_to:defined:2
+move_to_rel:defined:3
+rotate:defined:4
+stop:defined:5
+kick:defined:6
+
+action1BigRobot:7
+action2BigRobot:8
+
+action1LittleRobot:9

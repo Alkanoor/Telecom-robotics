@@ -1,0 +1,16 @@
+Robot
+  move&move_rel&move_to&rotate&stop|grant_for Operator < Admin
+  BigRobotAlly
+    move&move_rel&move_to&rotate&stop|grant_for Robot1 < Operator_team1 < Admin
+    action1BigRobot|grant_for Robot1 < Operator_team1 < Admin
+    action2BigRobot|grant_for Robot1 < Operator_team1 < Admin
+  LittleRobotAlly
+    move&move_rel&move_to&rotate&stop|grant_for Robot2 < Operator_team1 < Admin
+    action1LittleRobot|grant_for Robot2 < Operator_team1 < Admin
+  BigRobotEnnemy
+    move&move_rel&move_to&rotate&stop|grant_for Robot3 < Operator_team2 < Admin
+    action1BigRobot|grant_for Robot3 < Operator_team2 < Admin
+    action2BigRobot|grant_for Robot3 < Operator_team2 < Admin
+  LittleRobotEnnemy
+    move&move_rel&move_to&rotate&stop|grant_for Robot4 < Operator_team2 < Admin
+    action1LittleRobot|grant_for Robot4 < Operator_team2 < Admin

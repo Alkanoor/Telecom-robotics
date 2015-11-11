@@ -1,0 +1,2 @@
+errorBlockReading: log-add 'log/' prefix 'networkTransmission'
+redirectWarning: log-add 'log/' prefix 'warning'

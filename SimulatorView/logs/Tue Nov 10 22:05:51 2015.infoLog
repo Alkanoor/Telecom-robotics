@@ -1,0 +1,57 @@
+<Tue Nov 10 22:05:51 2015> Beacon :
+<Tue Nov 10 22:05:51 2015> Has father ? false
+<Tue Nov 10 22:05:51 2015> Attributes : 
+<Tue Nov 10 22:05:51 2015> positionOnTable
+<Tue Nov 10 22:05:51 2015> size
+
+<Tue Nov 10 22:05:51 2015> BigRobotAlly :
+<Tue Nov 10 22:05:51 2015> Has father ? true
+<Tue Nov 10 22:05:51 2015> Static vars : 
+<Tue Nov 10 22:05:51 2015> possibleStates
+
+<Tue Nov 10 22:05:51 2015> BigRobotEnnemy :
+<Tue Nov 10 22:05:51 2015> Has father ? true
+<Tue Nov 10 22:05:51 2015> Static vars : 
+<Tue Nov 10 22:05:51 2015> possibleStates
+
+<Tue Nov 10 22:05:51 2015> LittleRobotAlly :
+<Tue Nov 10 22:05:51 2015> Has father ? true
+<Tue Nov 10 22:05:51 2015> Static vars : 
+<Tue Nov 10 22:05:51 2015> possibleStates
+
+<Tue Nov 10 22:05:51 2015> LittleRobotEnnemy :
+<Tue Nov 10 22:05:51 2015> Has father ? true
+<Tue Nov 10 22:05:51 2015> Static vars : 
+<Tue Nov 10 22:05:51 2015> possibleStates
+
+<Tue Nov 10 22:05:51 2015> MovableElement :
+<Tue Nov 10 22:05:51 2015> Has father ? false
+<Tue Nov 10 22:05:51 2015> Attributes : 
+<Tue Nov 10 22:05:51 2015> positionOnTable
+<Tue Nov 10 22:05:51 2015> rotation
+<Tue Nov 10 22:05:51 2015> state
+<Tue Nov 10 22:05:51 2015> shape
+<Tue Nov 10 22:05:51 2015> size
+
+<Tue Nov 10 22:05:51 2015> Obstacle :
+<Tue Nov 10 22:05:51 2015> Has father ? false
+<Tue Nov 10 22:05:51 2015> Attributes : 
+<Tue Nov 10 22:05:51 2015> positionOnTable
+<Tue Nov 10 22:05:51 2015> rotation
+<Tue Nov 10 22:05:51 2015> shape
+<Tue Nov 10 22:05:51 2015> size
+
+<Tue Nov 10 22:05:51 2015> Robot :
+<Tue Nov 10 22:05:51 2015> Has father ? false
+<Tue Nov 10 22:05:51 2015> Attributes : 
+<Tue Nov 10 22:05:51 2015> positionOnTable
+<Tue Nov 10 22:05:51 2015> rotation
+<Tue Nov 10 22:05:51 2015> state
+<Tue Nov 10 22:05:51 2015> size
+<Tue Nov 10 22:05:51 2015> team
+
+<Tue Nov 10 22:05:51 2015> Table :
+<Tue Nov 10 22:05:51 2015> Has father ? false
+<Tue Nov 10 22:05:51 2015> Attributes : 
+<Tue Nov 10 22:05:51 2015> size
+

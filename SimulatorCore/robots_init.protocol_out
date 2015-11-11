@@ -1,0 +1,42 @@
+begin = '#'
+end = '$'
+stringDelimiter = '%'
+
+message[:] = '0'
+
+foreach BigRobotAlly b:
+  message[:] = 'RB'
+  message[:] = b.dynamic
+  message[:] = b.static
+
+foreach LittleRobotAlly l:
+  message[:] = 'RL'
+  message[:] = l.dynamic
+  message[:] = l.static
+
+foreach BigRobotEnnemy b:
+  message[:] = 'Rb'
+  message[:] = b.dynamic
+  message[:] = b.static
+
+foreach LittleRobotEnnemy l:
+  message[:] = 'Rl'
+  message[:] = l.dynamic
+  message[:] = l.static
+
+
+foreach MovableElement m:
+  message[:] = 'M'
+  message[:] = m.dynamic
+
+foreach Obstacle o:
+  message[:] = 'O'
+  message[:] = o.dynamic
+
+foreach Beacon b:
+  message[:] = 'B'
+  message[:] = b.dynamic
+
+forfirst Table t:
+  message[:] = 'T'
+  message[:] = t.dynamic

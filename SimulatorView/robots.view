@@ -1,0 +1,46 @@
+Robot
+  im:data/defaultRobot.png
+  transparencyMask:(0,0,0),0.1
+BigRobotAlly
+  |when (state==possibleStates['idle']&&state==aurevoir) || state==OK
+    im:data/bigRobotAllyIdle.png
+    transparencyMask:(0,0,0),0
+    color:(0,255,0,70)
+LittleRobotAlly
+  |when (state==possibleStates['idle']&&(state==bonjour&&state==oakok)&&state==okoksqdpok)&&bonjour=aurevoir
+    im:data/littleRobotAllyIdle.png
+    transparencyMask:(0,0,0),0
+    color:(0,200,0,70)
+BigRobotEnnemy
+  |when state==possibleStates['idle']
+    im:data/bigRobotEnnemyIdle.png
+    transparencyMask:(0,0,0),0
+    color:(0,0,255,70)
+LittleRobotEnnemy
+  |when state==possibleStates['idle']
+    im:data/littleRobotEnnemyIdle.png
+    transparencyMask:(0,0,0),0
+    color:(0,0,200,70)
+MovableElement
+  |when shape==0
+    im:data/rect.png
+    transparencyMask:(0,0,0),0
+    color:(200,255,0)
+  |when shape==0
+    im:data/cylinder.png
+    transparencyMask:(0,0,0),0
+    color:(200,255,0)
+Obstacle
+  |when shape==0
+    im:data/rect.png
+    transparencyMask:(0,0,0),0
+    color:(255,50,0)
+  |when shape==0
+    im:data/cylinder.png
+    transparencyMask:(0,0,0),0
+    color:(255,50,0)
+Beacon
+  im:data/beacon.png
+  transparencyMask:(0,0,0),0
+Table
+  im:data/table.png

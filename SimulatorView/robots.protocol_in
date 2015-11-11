@@ -1,0 +1,79 @@
+validBegin = '#'
+validEnd = '$'
+stringDelimiter = '%'
+
+typeMessage = message[:]
+if typeMessage=='0':
+    while message[:]=='R':
+      m = message[:]
+      positionStateSizeTeam = message[:18]
+      if m=='B':
+        construct BigRobotAlly(positionStateSizeTeam,message.nextString)
+      elif m=='L':
+        construct LittleRobotAlly(positionStateSizeTeam,message.nextString)
+      elif m=='b':
+        construct BigRobotEnnemy(positionStateSizeTeam,message.nextString)
+      elif m=='l':
+        construct LittleRobotEnnemy(positionStateSizeTeam,message.nextString)
+
+    while message[:]=='M':
+      construct MovableElement(message[:18])
+
+    while message[:]=='O':
+      construct Obstacle(message[:17])
+
+    while message[:]=='B':
+      construct Beacon(message[:16])
+
+    if message[:]=='T'
+      construct Table(message[:8])
+
+elif typeMessage=='1':
+    while message[:]=='R':
+      type = message[:]
+      typeRobot = message[:]
+      if type=='a':
+        positionStateSizeTeam = message[:18]
+        if typeRobot=='B':
+          construct BigRobotAlly(positionStateSizeTeam)
+        elif typeRobot=='L':
+          construct LittleRobotAlly(positionStateSizeTeam)
+        elif typeRobot=='b':
+          construct BigRobotEnnemy(positionStateSizeTeam)
+        elif typeRobot=='l':
+          construct LittleRobotEnnemy(positionStateSizeTeam)
+      elif type=='d':
+        if typeRobot=='B':
+          destruct BigRobotAlly(0)
+        elif typeRobot=='L':
+          destruct LittleRobotAlly(0)
+        elif typeRobot=='b':
+          destruct BigRobotEnnemy(0)
+        elif typeRobot=='l':
+          destruct LittleRobotEnnemy(0)
+      elif type=='m':
+        positionStateSizeTeam = message[:18]
+        if typeRobot=='B':
+          modify BigRobotAlly(0,positionStateSizeTeam)
+        elif typeRobot=='L':
+          modify LittleRobotAlly(0,positionStateSizeTeam)
+        elif typeRobot=='b':
+          modify BigRobotEnnemy(0,positionStateSizeTeam)
+        elif typeRobot=='l':
+          modify LittleRobotEnnemy(0,positionStateSizeTeam)
+ 
+    while message[:]=='M':
+      type = message[:]
+      if type=='a':
+        add MovableElement(message[:18])
+      elif type=='d':
+        destruct MovableElement(message[:])
+      elif type=='m':
+        modify MovableElement(message[:],message[:18])
+
+    while message[:]=='O':
+      modify Obstacle(message[:],message[:17])
+    while message[:]=='B':
+      modify Beacon(message[:],message[:16])
+    if message[:]=='T'
+      modify Table(0,message[:8])
